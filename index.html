@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dutcas Tudor - Projects</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+    <style>
+        body {
+            background: #141414;
+        }
+    </style>
+
+    <title>Type-N-Speak</title>
 </head>
-<body>
-    <div class="w3-container w3-margin-bottom">
-        <h2>Projects</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit zis si lista jmechera cu proiecte.</p>
-        <ul class="w3-ul w3-card-4">
-            <li class="w3-bar">
-                <img src="images/mobile-app.png" class="w3-bar-item w3-circle" style="width:85px">
-                <div class="w3-bar-item">
-                   <span class="w3-large">Task List</span><br>
-                   <span>Easy to use app for creating notes and lists (JavaScript ES6).</span>
-                </div>
-                <a href="tasklist/index.html"><button class="w3-button w3-orange w3-bar-item w3-right w3-margin-top">Open</button></a>
-            </li>
-            <li class="w3-bar">
-                <img src="images/adobe-xd.png" class="w3-bar-item w3-circle" style="width:85px">
-                <div class="w3-bar-item">
-                   <span class="w3-large">Design Monthly</span><br>
-                   <span>Illustration style responsive website template (Adobe XD, HTML5, CSS3).</span>
-                </div>
-                <a href="designmonthly/index.html"><button class="w3-button w3-orange w3-bar-item w3-right w3-margin-top">Open</button></a>
-            </li>
-        </ul>
+<body class="text-white">
+    <div class="container text-center">
+        <img src="img/speech.png" alt="" class="mb-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <textarea name="" id="text-input" class="form-control form-control-lg" placeholder="Type anything..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Rate</label>
+                        <div id="rate-value" class="badge badge-primary float-right">1</div>
+                        <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label for="pitch">Pitch</label>
+                        <div id="pitch-value" class="badge badge-primary float-right">1</div>
+                        <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <select id="voice-select" class="form-control form-control-lg"></select>
+                    </div>
+                    <button class="btn btn-light btn-lg btn-block">Speak It</button>
+                </form>
+            </div>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
